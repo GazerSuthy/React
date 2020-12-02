@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: orange;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* main component */
+.grocery-bud {
+  text-align: center;
+  font-size: 1em;
+  border: black solid 1px;
+  width: 90vw;
+  margin-top: 35vh;
+  padding-bottom: 30px;
+  color: lightblue;
+  background-color: blue;
+  box-shadow: 3px 3px 5px 6px lightblue;
+}
+
+.groceryBar {
+  background-color: lightblue;
+  height: 30px;
+  width: 70%;
+  font-size: 1em;
+  color: navy;
+}
+
+.submit-btn {
+  height: 33px;
+  font-size: 16px;
+  color: white;
+  background-color: hsl(205, 78%, 60%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.submit-btn:hover {
+  background-color: navy;
+  cursor: pointer;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 37px;
+  padding: 15px;
+  background-color: navajowhite;
+  color: navy;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: oblique;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.item-container:nth-child(even) {
+  background-color: navy;
+  color: navajowhite;
+}
+
+.user-buttons {
+  margin: 0 5px;
+}
+
+.user-buttons button {
+  border: 1px black solid;
+  border-style: groove;
+  border-radius: 5px;
+}
+
+.user-buttons button:hover {
+  cursor: pointer;
+}
+
+.edit {
+  margin-right: 5px;
+  background-color: lime;
+}
+
+.edit:hover {
+  box-shadow: 1px 1px 1px 1px limegreen;
+}
+
+.delete {
+  margin-left: 5px;
+  background-color: red;
+}
+
+.delete:hover {
+  box-shadow: 1px 1px 1px 1px darkred;
+}
+
+.clear {
+  background-color: rgb(207, 207, 207);
+  color: darkred;
+  border: 5px double rgb(196, 3, 3);
+}
+
+.alert-message {
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+  background-color: navy;
+}
+
+@media screen and (min-width: 1000px) {
+  .grocery-bud {
+    width: 65vw;
+  }
+}
