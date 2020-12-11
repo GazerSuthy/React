@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* navbar */
+nav {
+  background-color: black;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.title {
+  font-size: 2.2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: aqua;
+  letter-spacing: 1px;
+  font-style: oblique;
+}
+
+.shopping-bag {
+  display: block;
+  position: relative;
+  margin-right: 55px;
+}
+
+nav svg {
+  width: 2.2rem;
+  fill: white;
+}
+
+/* temp hide */
+.item-counter {
+  position: absolute;
+  color: black;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  font-size: 16px;
+  text-align: center;
+  top: -2px;
+  right: -7px;
+  font-weight: 700;
+}
+
+/* cart Container */
+.CartContainer {
+  width: 80%;
+  margin: auto;
+}
+
+/* individual item temp css LOL */
+.item-display {
+  display: flex;
+  margin: 25px;
+}
+
+.item-img {
+  margin-right: 150px;
+}
+
+.item-display img {
+  width: 100px;
+  height: auto;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 70%;
+}
+
+.remove {
+  background-color: transparent;
+  border: none;
+  color: rgb(202, 19, 19);
+  cursor: pointer;
+}
+
+.item-title {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.price {
+  color: rgb(78, 78, 78);
+}
+
+.upArrow,
+.downArrow {
+  color: dodgerblue;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.arrow.upArrow:hover {
+  color: navy;
+  font-size: 35px;
+}
+
+.arrow.downArrow:hover {
+  color: navy;
+  font-size: 31.4px;
+  cursor: pointer;
+}
+
+.item-amount {
+  color: navy;
+  font-size: 20px;
+  padding-left: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.upArrow {
+  font-size: 33px;
+}
+
+.yourBAG {
+  margin: 60px;
+  text-align: center;
+  font-size: 1.8em;
+  color: midnightblue;
+}
+
+.cart-info {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  width: 92%;
+}
+
+.items {
+  padding-bottom: 20px;
+}
+
+.clear-btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.clear {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  color: red;
+  border: 1px solid darkred;
+  margin-top: 2.25rem;
+  border-radius: 10px;
+}
