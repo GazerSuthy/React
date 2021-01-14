@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* sidebar styles  */
+.sidebar-container {
+  width: 100%;
+  height: 100px;
+  background-color: #292d3e;
+}
+
+.search {
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search input {
+  width: 75%;
+  height: 33px;
+  margin-left: 20px;
+}
+
+.playButton {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 27px;
+  border: none;
+  background-color: transparent;
+}
+
+.songs-menu {
+  height: 73vh;
+  overflow-y: scroll;
+  background-color: #292d3e;
+}
+
+.song-layout {
+  display: flex;
+  padding: 20px;
+  margin-right: 30px;
+  margin-bottom: 11px;
+  margin-left: 20px;
+  border: 1px solid black;
+  background-color: white;
+  align-items: center;
+}
+
+.song-layout input {
+  height: 15px;
+  width: 15px;
+}
+
+.songName {
+  margin-left: 50%;
+  font-size: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+/* button mode changes */
+.playButton.hide {
+  display: none;
+}
+.checkBox.hide {
+  display: none;
+}
+.doneMakingPlaylist.hide {
+  display: none;
+}
+.addPlaylist.hide {
+  display: none;
+}
+.deletePlaylist.hide {
+  display: none;
+}
+
+/* music player */
+.Player-OFF,
+.Player-ON {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid black;
+  height: 15vh;
+  width: 100%;
+  background-color: #3b415c;
+}
+
+/* #676F9B  #3B415C */
+/* full screen */
+@media screen and (min-width: 1000px) {
+  .sidebar-container {
+    width: 20%;
+    background-color: #292d3e;
+  }
+
+  .songs-menu {
+    background-color: #292d3e;
+  }
+
+  .Player-ON,
+  .Player-OFF {
+    display: flex;
+    justify-content: center;
+    background-color: #3b415c;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+
+  .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .image {
+    position: relative;
+    display: flex;
+    background-color: #292d3e;
+    height: 555px;
+    width: 555px;
+    border-radius: 100%;
+    top: -66px;
+  }
+
+  .title {
+    position: relative;
+    color: white;
+    top: -20px;
+    font-size: 33px;
+  }
+}
